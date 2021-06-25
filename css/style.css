@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 /* font-family: 'Big Shoulders Display', cursive;
 font-family: 'Lexend Deca', sans-serif; */
@@ -10,141 +10,189 @@ font-family: 'Lexend Deca', sans-serif; */
 }
 
 :root {
-    --clr-1 : hsl(31, 77%, 52%);
-    --clr-2 : hsl(184, 100%, 22%);
-    --clr-3 : hsl(179, 100%, 13%);
+  --clr-1: hsl(31, 77%, 52%);
+  --clr-2: hsl(184, 100%, 22%);
+  --clr-3: hsl(179, 100%, 13%);
 
-    --clr-text : hsla(0, 0%, 100%, 0.75);
-    --clr-btn : hsl(0, 0%, 95%);
+  --clr-text: hsla(0, 0%, 100%, 0.75);
+  --clr-btn: hsl(0, 0%, 95%);
 
-    --font-family-1 : 'Big Shoulders Display', cursive;
-    --font-family-2 : 'Lexend Deca', sans-serif;
+  --clr-white-faded: hsla(0, 0%, 100%, 0.541);
 
-    --b-rad-1 : 20px 20px 0 0;
-    --b-rad-2 : 0;
-    --b-rad-3 : 0 0 20px 20px;
+  --font-family-1: "Big Shoulders Display", cursive;
+  --font-family-2: "Lexend Deca", sans-serif;
+
+  --b-rad-1: 20px 20px 0 0;
+  --b-rad-2: 0;
+  --b-rad-3: 0 0 20px 20px;
 }
 
 body {
-    background: rgb(210, 232, 255);
+  background: rgb(210, 232, 255);
 
-    width: 100vw;
-    min-height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
 
-    margin: 0;
-    padding: 1em;
+  margin: 0;
+  padding: 2em 1em;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow-x: hidden;
 }
 
 .card_container {
-    /* background: rgb(233, 195, 248); */
+  /* background: rgb(233, 195, 248); */
 
-    width: 100%;
-    height: fit-content;
+  width: 100%;
+  height: fit-content;
 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  position: relative;
 }
 
 .card {
-    min-width: 18em;
-    flex: 0 1 calc(100% / 3);
+  min-width: 18em;
+  flex: 0 1 calc(100% / 3);
 
-    padding: 2.5em;
+  padding: 2.5em;
 
-    border-radius: var(--b-rad);
-    background: var(--clr-card);
+  border-radius: var(--b-rad);
+  background: var(--clr-card);
 }
 .card_1 {
-    --clr-card : var(--clr-1);
-    --b-rad : var(--b-rad-1);
+  --clr-card: var(--clr-1);
+  --b-rad: var(--b-rad-1);
+
+  position: relative;
 }
 .card_2 {
-    --clr-card : var(--clr-2);
-    --b-rad : var(--b-rad-2);
+  --clr-card: var(--clr-2);
+  --b-rad: var(--b-rad-2);
 }
 .card_3 {
-    --clr-card : var(--clr-3);
-    --b-rad : var(--b-rad-3);
+  --clr-card: var(--clr-3);
+  --b-rad: var(--b-rad-3);
 }
 
 h2 {
-    color : var(--clr-btn);
-    font-family: var(--font-family-1);
-    text-transform: uppercase;
-    font-size: 2.4em;
+  color: var(--clr-btn);
+  font-family: var(--font-family-1);
+  text-transform: uppercase;
+  font-size: 2.4em;
 
-    margin : 0.5em 0;
+  margin: 0.5em 0;
 }
 
 p {
-    font-family: var(--font-family-2);
-    color : var(--clr-text);
-    line-height: 1.6;
-    font-size: 0.85em;
+  font-family: var(--font-family-2);
+  color: var(--clr-text);
+  line-height: 1.6;
+  font-size: 0.85em;
 
-    max-width: 25ch;
+  max-width: 25ch;
 }
 
 button {
-    all : unset;
-    background: var(--clr-btn);
-    border : 2px solid var(--clr-btn);
+  all: unset;
+  background: var(--clr-btn);
+  border: 2px solid var(--clr-btn);
 
-    padding: 0.8em 1.6em;
-    border-radius: 30px;
-    margin-top: 2em;
+  padding: 0.8em 1.6em;
+  border-radius: 30px;
+  margin-top: 2em;
 }
 
 a {
-    all: unset;
+  all: unset;
 
-    color : var(--clr-card);
-    font-family: var(--font-family-2);
-    font-size: 0.9em;
+  color: var(--clr-card);
+  font-family: var(--font-family-2);
+  font-size: 0.9em;
 }
 
-@media (min-width : 768px) {
-    .card_container {
-        width: 80%;
-    }
-    :root {
-        --b-rad-1 : 20px 0 0 20px;
-        --b-rad-2 : 0 20px 20px 0;
-        --b-rad-3 : 0 0 20px 20px;
-    }
+@media (min-width: 768px) {
+  .card_container {
+    width: 80%;
+  }
+  :root {
+    --b-rad-1: 20px 0 0 20px;
+    --b-rad-2: 0 20px 20px 0;
+    --b-rad-3: 0 0 20px 20px;
+  }
 }
-@media (min-width : 1112px) {
-    :root {
-        --b-rad-1 : 20px 0 0 20px;
-        --b-rad-2 : 0;
-        --b-rad-3 : 0 20px 20px 0;
-    }
+@media (min-width: 1112px) {
+  :root {
+    --b-rad-1: 20px 0 0 20px;
+    --b-rad-2: 0;
+    --b-rad-3: 0 20px 20px 0;
+  }
 }
-@media (min-width : 1300px) {
-    .card_container {
-        width: 70%;
-    }
-    :root {
-        --b-rad-1 : 20px 0 0 20px;
-        --b-rad-2 : 0;
-        --b-rad-3 : 0 20px 20px 0;
-    }
-    button {
-        margin-top: 4em;
-    }
+@media (min-width: 1300px) {
+  .card_container {
+    width: 70%;
+  }
+  :root {
+    --b-rad-1: 20px 0 0 20px;
+    --b-rad-2: 0;
+    --b-rad-3: 0 20px 20px 0;
+  }
+  button {
+    margin-top: 4em;
+  }
 }
 
 button:hover {
-    background: var(--clr-card);
-    border : 2px solid var(--clr-btn);
+  background: var(--clr-card);
+  border: 2px solid var(--clr-btn);
 
-    cursor: pointer;
+  cursor: pointer;
 }
 button:hover a {
-    color : var(--clr-btn);
+  color: var(--clr-btn);
+}
+
+.square {
+  position: absolute;
+  top: -1em;
+  left: -1em;
+
+  width: 8em;
+  height: 8em;
+  border-radius: 20px;
+
+  background: var(--clr-white-faded);
+
+  z-index: -1;
+}
+
+.circle {
+  position: absolute;
+  bottom: 2em;
+  right: 0;
+
+  width: 4em;
+  height: 8em;
+
+  border-radius: 4em 0 0 4em;
+
+  background: var(--clr-white-faded);
+}
+
+.square-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 4em;
+  height: 4em;
+
+  background: var(--clr-white-faded);
+  border-radius: 0 0 0 4em;
 }
