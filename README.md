@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution Url : [Click Here](later.com)
-- Live Site Url : [Click Here](later.com)
+- Solution Url : [Click Here](https://github.com/masterpranay1/3-column-card-component)
+- Live Site Url : [Click Here](https://masterpranay1.github.io/3-column-card-component/)
 
 ## My process
 
